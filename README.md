@@ -1,50 +1,70 @@
-# React + TypeScript + Vite
+# Tic-Tac-Toe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un pequeño proyecto de Tic-Tac-Toe (Tres en Raya) desarrollado con **React**, **TypeScript** y **Vite**.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎮 Interfaz interactiva desarrollada con React.
+- 🔍 Tipado seguro con TypeScript.
+- ⚡ Configuración ligera y rápida con Vite.
+- 📱 Diseño responsivo y amigable para el usuario.
+- 🏆 Implementación de lógica básica para detección de ganador y reinicio de partida.
 
-## Expanding the ESLint configuration
+## Requisitos
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Asegúrate de tener instalado **Node.js** y **npm** o **yarn** antes de ejecutar el proyecto.
 
-- Configure the top-level `parserOptions` property like this:
+## Instalación y ejecución
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### 1️⃣ Clonar el repositorio
+
+```sh
+git clone https://github.com/ssosag/tic-tac-toe.git
+cd tic-tac-toe
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 2️⃣ Instalar dependencias
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Con **npm**:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```sh
+npm install
 ```
+
+Con **yarn**:
+
+```sh
+yarn install
+```
+
+### 3️⃣ Ejecutar en modo desarrollo
+
+Con **npm**:
+
+```sh
+npm run dev
+```
+
+Con **yarn**:
+
+```sh
+yarn dev
+```
+
+El servidor se iniciará en [`http://localhost:5173/`](http://localhost:5173/).
+
+### 4️⃣ Construir para producción
+
+Con **npm**:
+
+```sh
+npm run build
+```
+
+Con **yarn**:
+
+```sh
+yarn build
+```
+
+¡Diviértete jugando Tic-Tac-Toe! 🎉
